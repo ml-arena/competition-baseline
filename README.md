@@ -25,12 +25,12 @@ URL). The **GSM8K** and **Permuted MNIST** notebooks target one competition each
 import mlarena
 client = mlarena.connect(api_key="mlk_user_…")   # Profile -> API Keys
 
-class Agent:
-    ...
+# RL / flex competitions: put your `Agent` class in agent.py and upload it
+# (uploading the file keeps its imports; the notebooks do this with %%writefile).
+client.submit(competition_id=43, files=["agent.py"])
 
-client.submit(competition_id=43, agent=Agent)     # RL / flex: uploads the class as agent.py
-# file competitions instead upload a file:
-# client.submit(competition_id=172, files=["submission.csv"])
+# File competitions: upload your submission file.
+client.submit(competition_id=172, files=["submission.csv"])
 ```
 
 See the [SDK docs](https://pypi.org/project/mlarena-sdk/) for status polling, log streaming,

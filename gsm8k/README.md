@@ -21,4 +21,4 @@ The template guesses random numbers so you can see the submit loop. The real bas
 a small **pre-cached** instruct model (e.g. `Qwen/Qwen2.5-0.5B-Instruct`), prompts it to
 reason step by step ending in `#### <number>`, and regexes out the final number — batching
 all 10 questions in one `generate` call to fit the timeout. Submit on a GPU runtime:
-`client.submit(165, agent=Agent, runtime={"language": "python", "framework": "torch"})`.
+`client.submit(165, files=["agent.py"], runtime={"language": "python", "framework": "torch"})`.
