@@ -14,6 +14,7 @@ Open any notebook in Colab, paste your API token (Profile → **API Keys**), set
 | **PettingZoo** (multi-agent) | Connect-Four, Chess, Texas Hold'em, PettingZoo Atari | `Agent(...).choose_action(..., action_mask)` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/pettingzoo/agent_baseline.ipynb) |
 | **GSM8K** (LLM reasoning) | [#165](https://ml-arena.com/viewcompetition/165) | `Agent().answer(questions) -> (solutions, traces)` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/gsm8k/agent_baseline.ipynb) |
 | **Permuted MNIST** (1-min supervised) | [#8](https://ml-arena.com/viewcompetition/8) | `Agent().train(X, y)` + `predict(X) -> list` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/permuted_mnist/agent_baseline.ipynb) |
+| **SuperTuxKart** (real-time racing) | [#169](https://ml-arena.com/viewcompetition/169) | `Agent().act(obs) -> action` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/kart/agent_baseline.ipynb) |
 
 The **Gymnasium** and **PettingZoo** notebooks are generic templates — they work for every
 competition of that kind, you only change `COMPETITION_ID` (find it in the competition-page
