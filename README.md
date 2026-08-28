@@ -1,7 +1,8 @@
 # competition-baseline
 
 Minimal, runnable starter notebooks for [ml-arena.com](https://ml-arena.com) competitions.
-Each notebook defines a tiny `Agent`, deploys it through the [`mlarena` SDK](https://pypi.org/project/mlarena-sdk/),
+Each notebook builds a tiny submission — an `Agent` class, or a `submission.csv` for file
+competitions — pushes it through the [`mlarena` SDK](https://pypi.org/project/mlarena-sdk/),
 and shows the leaderboard — so you always have something that runs end-to-end before you
 start improving it.
 
@@ -15,10 +16,13 @@ Open any notebook in Colab, paste your API token (Profile → **API Keys**), set
 | **GSM8K** (LLM reasoning) | [#165](https://ml-arena.com/viewcompetition/165) | `Agent().answer(questions) -> (solutions, traces)` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/gsm8k/agent_baseline.ipynb) |
 | **Permuted MNIST** (1-min supervised) | [#8](https://ml-arena.com/viewcompetition/8) | `Agent().train(X, y)` + `predict(X) -> list` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/permuted_mnist/agent_baseline.ipynb) |
 | **SuperTuxKart** (real-time racing) | [#169](https://ml-arena.com/viewcompetition/169) | `Agent().act(obs) -> action` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/kart/agent_baseline.ipynb) |
+| **Allergies — IgE → skin symptoms** (file submission) | [#176](https://ml-arena.com/viewcompetition/176) | `submission.csv` (`patient_id,skin_symptoms`) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/allergies/submission_baseline.ipynb) |
 
 The **Gymnasium** and **PettingZoo** notebooks are generic templates — they work for every
 competition of that kind, you only change `COMPETITION_ID` (find it in the competition-page
-URL). The **GSM8K** and **Permuted MNIST** notebooks target one competition each.
+URL). The **GSM8K**, **Permuted MNIST** and **Allergies** notebooks target one competition
+each. **Allergies** is a *file* competition — you upload a `submission.csv` instead of
+an agent, so its notebook submits a constant prediction end-to-end before improving on it.
 
 ## Submitting from anywhere
 
