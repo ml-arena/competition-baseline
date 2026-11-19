@@ -9,6 +9,7 @@ lower is better) once those hours have happened.
 |---|---|---|
 | `agent_baseline.ipynb` | load the data, train a Ridge, score it locally, submit | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/paris_temperature/agent_baseline.ipynb) |
 | `data_tour.ipynb` | no account needed: 1. the data (cities, cycles, upwind cities), 2. the challenge objective (input, CRPS, baselines) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/paris_temperature/data_tour.ipynb) |
+| `score_options.ipynb` | no account needed: which score for rare temperatures? The mean CRPS against six alternatives (tail-weighted CRPS, rare hours only, worst 5 %, rank measures, scores relative to the other participants), with a recommendation | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/paris_temperature/score_options.ipynb) |
 
 **Contract:**
 
