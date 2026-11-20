@@ -18,10 +18,11 @@ Open any notebook in Colab, paste your API token (Profile → **API Keys**), set
 | **SuperTuxKart** (real-time racing) | [#169](https://ml-arena.com/viewcompetition/169) | `Agent().act(obs) -> action` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/kart/agent_baseline.ipynb) |
 | **Allergies — IgE → skin symptoms** (file submission) | [#176](https://ml-arena.com/viewcompetition/176) | `submission.csv` (`patient_id,skin_symptoms`) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/allergies/submission_baseline.ipynb) |
 | **Paris Temperature** (probabilistic forecast) | [#203](https://ml-arena.com/viewchallenge/203) | `Agent().predict(rows) -> {"t+6h": [...], "t+48h": [...]}` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/paris_temperature/agent_baseline.ipynb) |
+| **Awalé** (two-player board game, entry level) | [#226](https://ml-arena.com/challenges/awale) | `Agent().choose_move(state) -> pit` | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ml-arena/competition-baseline/blob/main/awale/agent_baseline.ipynb) |
 
 The **Gymnasium** and **PettingZoo** notebooks are generic templates — they work for every
 competition of that kind, you only change `COMPETITION_ID` (find it in the competition-page
-URL). The **GSM8K**, **Permuted MNIST**, **Allergies** and **Paris Temperature** notebooks
+URL). The **GSM8K**, **Permuted MNIST**, **Allergies**, **Paris Temperature** and **Awalé** notebooks
 target one competition each. **Allergies** is a *file* competition — you upload a `submission.csv` instead of
 an agent, so its notebook submits a constant prediction end-to-end before improving on it.
 
